@@ -11,21 +11,21 @@ namespace WordCounter.Tests
     {
       // Arrange
       string testSentence = "I took apple from the appletree";
-      string testWord = "pie";
+      string testWord = "apple";
       Word newWord = new Word(testWord, testSentence);
       Assert.AreEqual("apple", newWord.GetWord());
       Assert.AreEqual("I took apple from the appletree", newWord.GetSentence());
     }
     [TestMethod]
-    public void CompareWord_ChecksIfWordsAreTheSame_True()
-    {
-      string testSentence = "I took apple from the appletree";
-      string testWord = "apple";
-      Word newWord = new Word(testWord, testSentence);
-      bool actualResult = newWord.CompareWord("apple");
-      bool expectedResult = true;
-      Assert.AreEqual(expectedResult, actualResult);
-    }
+   public void CompareWord_ChecksIfWordsAreTheSame_True()
+   {
+     string testSentence = "I took apple from the appletree";
+     string testWord = "apple";
+     Word newWord = new Word(testWord, testSentence);
+     bool actualResult = newWord.CompareWord("apple");
+     bool expectedResult = true;
+     Assert.AreEqual(expectedResult, actualResult);
+   }
 
   }
 }
