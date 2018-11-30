@@ -26,6 +26,16 @@ namespace WordCounter.Tests
      bool expectedResult = true;
      Assert.AreEqual(expectedResult, actualResult);
    }
+   [TestMethod]
+  public void GetArray_SentenceIntoArray_True()
+  {
+    string testSentence = "I took apple from the appletree";
+    Word newWord = new Word(testWord, testSentence);
+    array actualResult = newWord.GetArray("I" "took" "apple" "from" "the" "appletree");
+    array expectedResult = true;
+    Assert.AreEqual(expectedResult, actualResult);
+  }
+
 
   }
 }
