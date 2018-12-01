@@ -13,7 +13,8 @@ namespace WordCounter.Tests
       // Arrange
       string testSentence = "I took apple from the appletree";
       string testWord = "apple";
-      Word newWord = new Word(testWord, testSentence);
+    string testSplitSentence = { new testSentence ("I","took","apple","from","the", "appletree") };
+      Word newWord = new Word(testWord, testSentence, testSplitSentence);
       Assert.AreEqual("apple", newWord.GetWord());
       Assert.AreEqual("I took apple from the appletree", newWord.GetSentence());
     }
@@ -22,22 +23,24 @@ namespace WordCounter.Tests
    {
      string testSentence = "I took apple from the appletree";
      string testWord = "apple";
-     Word newWord = new Word(testWord, testSentence);
+   string testSplitSentence = { new testSentence ("I","took","apple","from","the", "appletree") };
+     Word newWord = new Word(testWord, testSentence, testSplitSentence);
      bool actualResult = newWord.CompareWord("apple");
      bool expectedResult = true;
      Assert.AreEqual(expectedResult, actualResult);
    }
    [TestMethod]
-  public void GetArray_SentenceIntoArray_True()
+  public void GetSplitSentence_SplitSentenceIntoArray_ExpectedResult()
   {
     string testSentence = "I took apple from the appletree";
-    string[] arrayArray = array.Split(' ');
-    Word newWord = new Word(testWord, testSentence, testarray);
-    string actualResult = newWord.GetArray("I","took","apple","from","the", "appletree");
-    string expectedResult = true;
+    string testWord = "apple";
+  string testSplitSentence = { new testSentence ("I","took","apple","from","the", "appletree") };
+    // string[] phrase = phrase.Split(' ');
+    Word newWord = new Word(testWord, testSentence, testSplitSentence);
+    string actualResult = newWord.GetSplitSentence("I","took","apple","from","the", "appletree");
+    string expectedResult = ("I","took","apple","from","the", "appletree");
     Assert.AreEqual(expectedResult, actualResult);
   }
-
 
   }
 }

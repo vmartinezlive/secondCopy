@@ -12,3 +12,10 @@
 /Users/Guest/Desktop/WordCounterProject/WordCounterProject.Solution/WordCounter.Tests/bin/Debug/netcoreapp1.1/WordCounter.pdb
 /Users/Guest/Desktop/WordCounterProject/WordCounterProject.Solution/WordCounter.Tests/obj/Debug/netcoreapp1.1/WordCounter.Tests.dll
 /Users/Guest/Desktop/WordCounterProject/WordCounterProject.Solution/WordCounter.Tests/obj/Debug/netcoreapp1.1/WordCounter.Tests.pdb
+/Users/Guest/WordCounterProject/WordCounterProject.Solution/WordCounter.Tests/bin/Debug/netcoreapp1.1/WordCounter.Tests.deps.json
+/Users/Guest/WordCounterProject/WordCounterProject.Solution/WordCounter.Tests/bin/Debug/netcoreapp1.1/WordCounter.Tests.runtimeconfig.json
+/Users/Guest/WordCounterProject/WordCounterProject.Solution/WordCounter.Tests/bin/Debug/netcoreapp1.1/WordCounter.Tests.runtimeconfig.dev.json
+/Users/Guest/WordCounterProject/WordCounterProject.Solution/WordCounter.Tests/obj/Debug/netcoreapp1.1/WordCounter.Tests.csproj.CoreCompileInputs.cache
+/Users/Guest/WordCounterProject/WordCounterProject.Solution/WordCounter.Tests/obj/Debug/netcoreapp1.1/WordCounter.Tests.AssemblyInfo.cs
+/Users/Guest/WordCounterProject/WordCounterProject.Solution/WordCounter.Tests/obj/Debug/netcoreapp1.1/WordCounter.Tests.dll
+/Users/Guest/WordCounterProject/WordCounterProject.Solution/WordCounter.Tests/obj/Debug/netcoreapp1.1/WordCounter.Tests.pdb
