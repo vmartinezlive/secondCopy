@@ -1,5 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WordCounter.Models;
+using System;
 
 namespace WordCounter.Tests
 {
@@ -30,9 +31,10 @@ namespace WordCounter.Tests
   public void GetArray_SentenceIntoArray_True()
   {
     string testSentence = "I took apple from the appletree";
-    Word newWord = new Word(testWord, testSentence);
-    array actualResult = newWord.GetArray("I" "took" "apple" "from" "the" "appletree");
-    array expectedResult = true;
+    string[] arrayArray = array.Split(' ');
+    Word newWord = new Word(testWord, testSentence, testarray);
+    string actualResult = newWord.GetArray("I","took","apple","from","the", "appletree");
+    string expectedResult = true;
     Assert.AreEqual(expectedResult, actualResult);
   }
 
