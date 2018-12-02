@@ -13,34 +13,45 @@ namespace WordCounter.Tests
       // Arrange
       string testSentence = "I took apple from the appletree";
       string testWord = "apple";
-    string testSplitSentence = { new testSentence ("I","took","apple","from","the", "appletree") };
-      Word newWord = new Word(testWord, testSentence, testSplitSentence);
+
+      //Act
+      Word newWord = new Word(testWord, testSentence);
+
+      //Act
       Assert.AreEqual("apple", newWord.GetWord());
       Assert.AreEqual("I took apple from the appletree", newWord.GetSentence());
     }
     [TestMethod]
-   public void CompareWord_ChecksIfWordsAreTheSame_True()
-   {
-     string testSentence = "I took apple from the appletree";
-     string testWord = "apple";
-   string testSplitSentence = { new testSentence ("I","took","apple","from","the", "appletree") };
-     Word newWord = new Word(testWord, testSentence, testSplitSentence);
-     bool actualResult = newWord.CompareWord("apple");
-     bool expectedResult = true;
-     Assert.AreEqual(expectedResult, actualResult);
-   }
-   [TestMethod]
-  public void GetSplitSentence_SplitSentenceIntoArray_ExpectedResult()
-  {
-    string testSentence = "I took apple from the appletree";
-    string testWord = "apple";
-  string testSplitSentence = { new testSentence ("I","took","apple","from","the", "appletree") };
-    // string[] phrase = phrase.Split(' ');
-    Word newWord = new Word(testWord, testSentence, testSplitSentence);
-    string actualResult = newWord.GetSplitSentence("I","took","apple","from","the", "appletree");
-    string expectedResult = ("I","took","apple","from","the", "appletree");
-    Assert.AreEqual(expectedResult, actualResult);
-  }
+    public void CompareWord_ChecksIfWordsAreTheSame_True()
+    {
+      // Arrange
+      string testSentence = "I took apple from the appletree";
+      string testWord = "apple";
+
+      //Act
+      Word newWord = new Word(testWord, testSentence);
+      bool actualResult = newWord.CompareWord("apple");
+      bool expectedResulkgslt = true;
+
+      //Act
+      Assert.AreEqual(expectedResult, actualResult);
+    }
+    [TestMethod]
+    public void GetSplitSentence_SplitSentenceIntoArray_ExpectedResult()
+    {
+      // Arrange
+      string testSentence = "I took apple from the appletree";
+      string[] phrase = phrase.Split(' ');
+
+      //Act
+      SplitSentence  newSplitSentence = new SplitSentence (testSplitSentence);
+      // Word newWord = new Word(testWord, testSentence, testSplitSentence);
+      string actualResult = newWord.GetSplitSentence("I","took","apple","from","the", "appletree");
+      string expectedResult = (" ");
+
+      //Act
+      Assert.AreEqual(expectedResult, actualResult);
+    }
 
   }
 }
