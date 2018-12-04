@@ -31,16 +31,16 @@ namespace WordCounter.Models
     public int CountWords()
     {
       int count = 0; // need to create variable to keep track of how many times the word occurs
-      string[] words = _sentence.Split(' ');
+      string[] words = _sentence.Split(' '); //need to create array of sentence from user splitting the words to array into variable words.
 
-      foreach(string word in words)
+      foreach(string word in words)// create for loop of word in the new variable words (which is sentence.split)
       {
         //logic for counting each word that matches test word
-        if(_word == word)
+        if(_word == word) // create if stament to verify if _word is equal to word.
         {
-          count++;
+          count++; // once the word is found this will count how many similar words is listed.
         }
-        System.Console.WriteLine($"{word}");
+        System.Console.WriteLine($"{word}");  //this will console write all the words in the sample sentence in array
       }
 
       return count;
