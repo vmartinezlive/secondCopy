@@ -37,17 +37,17 @@ namespace WordCounter.Tests
       Assert.AreEqual(expectedResult, actualResult);
     }
     [TestMethod]
-    public void GetSplitSentence_SplitSentenceIntoArray_ExpectedResult()
+    public void GetcountWords_CountsTheNumberOfApplesInSentence_Int()
     {
       // Arrange
       string testSentence = "I took apple from the appletree";
-      string[] phrase = phrase.Split(' ');
+      string testWord = "apple";
+      string[] expectedresult = testSentence.Split(' ');
 
       //Act
-      SplitSentence  newSplitSentence = new SplitSentence (testSplitSentence);
-      // Word newWord = new Word(testWord, testSentence, testSplitSentence);
-      string actualResult = newWord.GetSplitSentence("I","took","apple","from","the", "appletree");
-      string expectedResult = (" ");
+
+      int actualResult = newWord.GetcountWords(2);
+      int expectedResult = (2);
 
       //Act
       Assert.AreEqual(expectedResult, actualResult);
