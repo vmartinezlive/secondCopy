@@ -28,10 +28,23 @@ namespace WordCounter.Models
       }
       return false;
     }
-    // public int CountWords()
-    // {
-    //
-    // }
+    public int CountWords()
+    {
+      int count = 0; // need to create variable to keep track of how many times the word occurs
+      string[] words = _sentence.Split(' ');
+
+      foreach(string word in words)
+      {
+        //logic for counting each word that matches test word
+        if(_word == word)
+        {
+          count++;
+        }
+        System.Console.WriteLine($"{word}");
+      }
+
+      return count;
+    }
     // public string phrase()
     // {
     //   foreach  (var word in words)
@@ -39,7 +52,7 @@ namespace WordCounter.Models
     //     System.Console.WriteLine($"{word}>");
     //   }
     // }
-    //
+
 
 
   }

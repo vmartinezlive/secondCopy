@@ -31,23 +31,23 @@ namespace WordCounter.Tests
       //Act
       Word newWord = new Word(testWord, testSentence);
       bool actualResult = newWord.CompareWord("apple");
-      bool expectedResulkgslt = true;
+      bool expectedResult = true;
 
       //Act
       Assert.AreEqual(expectedResult, actualResult);
     }
     [TestMethod]
-    public void GetcountWords_CountsTheNumberOfApplesInSentence_Int()
+    public void CountWords_CountsTheNumberOfApplesInSentence_Int()
     {
       // Arrange
       string testSentence = "I took apple from the appletree";
       string testWord = "apple";
-      string[] expectedresult = testSentence.Split(' ');
+      Word newWord = new Word(testWord, testSentence);
 
       //Act
 
-      int actualResult = newWord.GetcountWords(2);
-      int expectedResult = (2);
+      int actualResult = newWord.CountWords();
+      int expectedResult = 1;
 
       //Act
       Assert.AreEqual(expectedResult, actualResult);
