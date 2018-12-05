@@ -13,8 +13,6 @@ namespace WordCounter.Tests
       // Arrange
       string testSentence = "I took apple from the appletree";
       string testWord = "apple";
-
-      //Act
       Word newWord = new Word(testWord, testSentence);
 
       //Act
@@ -27,9 +25,8 @@ namespace WordCounter.Tests
       // Arrange
       string testSentence = "I took apple from the appletree";
       string testWord = "apple";
-
-      //Act
       Word newWord = new Word(testWord, testSentence);
+      //Act
       bool actualResult = newWord.CompareWord("apple");
       bool expectedResult = true;
 
@@ -45,7 +42,6 @@ namespace WordCounter.Tests
       Word newWord = new Word(testWord, testSentence);
 
       //Act
-
       int actualResult = newWord.CountWords();
       int expectedResult = 1;
 

@@ -45,15 +45,6 @@ namespace WordCounter.Models
 
       return count;
     }
-    // public string phrase()
-    // {
-    //   foreach  (var word in words)
-    //   {
-    //     System.Console.WriteLine($"{word}>");
-    //   }
-    // }
-
-
 
   }
 }
