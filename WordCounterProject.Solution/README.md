@@ -34,10 +34,27 @@ WordCounter.Solution
 ```
 ## Objectives
 
-* Count each word in sentence
-* Identify similar words in a sentence_
-* Remove identical word
-* Output number of words without identical word.
+* Create specs in plain english with on README
+* Specs include specific input and output values and a descriptive sentence.
+* Specs begin with the simplest possible behavior and progress to more complex cases, covering different input values.
+* All specs are translated correctly as test methods.
+* All tests are passing, and described functionality is present.
+
+* Identify words in a word
+  Input:  Apple
+  Output: Apple
+* Identify words in a sentence
+  Input:  I see a cat
+  Output: I see a cat
+* Identify similar words in a sentence
+  Input:  Fire! Fire! Where's the Fire?
+  Output: Fire
+* Change the sentence to array of strings
+  Input:  Fire! Fire! Where's the Fire?
+  Output: "Fire!" "Fire!" "Where's" "the" "Fire?"
+* Count the number of words in sentence
+  Input:  Fire! Fire! Where's the Fire?
+  Output: 3
 
 
 
