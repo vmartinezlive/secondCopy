@@ -9,7 +9,7 @@ namespace WordCounter.Controllers
     public ActionResult Index()
     {
       // Word newWord = new Word();
-      // return View(newWord);
+      return View();
     }
 
   }

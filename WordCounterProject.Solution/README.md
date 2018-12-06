@@ -33,7 +33,7 @@ WordCounter.Solution
 
 ```
 ## Objectives
-
+###C# Basic and Testing
 * Create specs in plain english with on README
 * Specs include specific input and output values and a descriptive sentence.
 * Specs begin with the simplest possible behavior and progress to more complex cases, covering different input values.
@@ -56,6 +56,17 @@ WordCounter.Solution
   Input:  Fire! Fire! Where's the Fire?
   Output: 3
 
+###C# MVC Web Apllications
+* Create Splash Page
+* Project uses two or more controllers
+* GET and POST requests/responses are used successfully.
+
+* Create Home Controller and Index.cshtml
+* Create CategoriesController.cs
+* Run Test for CategoriesController
+* Create New.cshtml to create a form
+* 
+*
 
 
 ## Known Bugs

@@ -1,0 +1,17 @@
+@{
+  Layout = "_Layout";
+}
+
+<div class=container>
+  <h1>Word Counter</h1>
+  @* <p>Type in a sentence:</p> *@
+
+  <form action="/categories" method="post">
+    <label for="categoryName">Type in a sentence:</label>
+    <input id="categoryName" name="categoryName" type="text">
+    <button type="submit">Add</button>
+  </form>
+
+  <p><a href="/">Back home</a></p>
+  <p><a href="/categories">Back to categories.</a></p>
+</div>
