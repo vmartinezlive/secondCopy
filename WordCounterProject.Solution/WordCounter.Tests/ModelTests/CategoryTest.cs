@@ -6,7 +6,7 @@ using System;
 namespace WordCounter.Tests
 {
   [TestClass]
-  public class CategoryTest
+  public class CategoryTest  : IDisposable
   {
 
     public void Dispose()
@@ -14,12 +14,12 @@ namespace WordCounter.Tests
       // Category.ClearAll();
     }
 
-    // [TestMethod]
-    // public void CategoryConstructor_CreatesInstanceOfCategory_Category()
-    // {
-    //   // Category newCategory = new Category("test category");
-    //   Assert.AreEqual(typeof(Category), newCategory.GetType());
-    // }
+    [TestMethod]
+    public void CategoryConstructor_CreatesInstanceOfCategory_Category()
+    {
+      // Category newCategory = new Category("test category");
+      Assert.AreEqual(typeof(Category), newCategory.GetType());
+    }
 
   }
 }
